@@ -1,25 +1,31 @@
 import React from 'react';
-import logo from './logo.svg';
+
 import './App.css';
+
+import AppAppBar from './components/AppAppBar';
+import ProductHero from './components/ProductHero';
+import ProductValues from './components/ProductValues';
+import ProductCategories from './components/ProductCategories';
+import ProductHowItWorks from './components/ProductHowItWorks';
+import ProductCTA from'./components/ProductCTA';
+import AppFooter from './components/AppFooter';
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <React.Fragment>
+      <AppAppBar />
+    {/*<ButtonAppBar></ButtonAppBar>*/}
+    {/* <Album></Album> */}
+    <ProductHero></ProductHero>
+    <ProductValues />
+    <ProductCategories />
+    <ProductHowItWorks />
+    <ProductCTA />
+    <AppFooter />
+    </React.Fragment>
   );
 }
 
